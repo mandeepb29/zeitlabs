@@ -1,0 +1,112 @@
+.vision-section{
+  position: relative;
+  overflow: hidden;
+ .bg5{
+   position: absolute;
+   height: 100%;
+   width: 100%;
+   top:0;
+   left: 0;
+   background: url('../assets/img/vision-bg.png');
+   background-size: 28%;
+   background-repeat: no-repeat;
+   background-position-x: -8%;
+   background-position-y: 140%;
+ }
+    
+  .vision-content .content p{
+      mix-blend-mode: difference !important;
+      width:70%;
+      z-index: 10;
+      position: relative;
+  }
+  
+  .zeit-bg{
+    transform: rotate(90deg);
+    mix-blend-mode: difference;
+    margin-top:25%;
+  }
+  .vision-content{
+    position: relative;
+  }
+  .bubble-section{
+    position: absolute;
+    height: 100%;
+    width: 30%;
+    right: 0;
+    top: 0;
+    z-index: 2;
+  }
+  .vision-content .img-wrap{
+    margin-top: 100px;
+  }
+}
+@media screen and (min-width:1025px){
+  .vision-section{
+    min-height: 100vh;
+    padding-top:25vh; 
+  }
+}
+@media screen and (max-width:1024px){
+  .vision-section{
+   min-height: 50vh;
+    .bg5{
+      background-position-y: 106%;
+    }
+  }
+}
+
+  @media screen and (max-width:768px){
+    .vision-section{
+      min-height: 100vh;
+      .bubble-section {
+        width: 39%;
+        right: -7%;
+        top: 109%;
+        z-index: 2;
+    }
+    .bg5{
+      background-size: 47%;
+      background-repeat: no-repeat;
+      background-position-x: -18%;
+      background-position-y: 90%;
+    }
+    .vision-content .content p {
+      width: 90%;
+      mix-blend-mode: difference !important;
+    }
+  }
+}
+
+@media screen and (max-height:420px){
+    .zeit-bg {
+      display: none;
+     }
+    }
+ 
+  @media screen and (max-width:420px){
+    .vision-section{
+      min-height: auto;
+      padding-bottom: 20vh;
+      .zeit-bg {
+        display: none;
+       }
+       .vision-content .content p{
+        mix-blend-mode: difference !important;
+         width:100%;
+         z-index: 10;
+         position: relative;
+     }
+     .bg5{
+      background-size: 60%;
+      background-position-x: 116%;
+      background-position-y: 111%;
+      opacity: 0.5;
+     }
+     .bubble-section {
+      width: 38%;
+      top: 0%;
+  }
+    }
+  }
+

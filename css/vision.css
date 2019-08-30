@@ -1,0 +1,119 @@
+.vision-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.vision-section .bg5 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: url("../assets/img/vision-bg.png");
+  background-size: 28%;
+  background-repeat: no-repeat;
+  background-position-x: -8%;
+  background-position-y: 140%;
+}
+
+.vision-section .vision-content .content p {
+  mix-blend-mode: difference !important;
+  width: 70%;
+  z-index: 10;
+  position: relative;
+}
+
+.vision-section .zeit-bg {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  mix-blend-mode: difference;
+  margin-top: 25%;
+}
+
+.vision-section .vision-content {
+  position: relative;
+}
+
+.vision-section .bubble-section {
+  position: absolute;
+  height: 100%;
+  width: 30%;
+  right: 0;
+  top: 0;
+  z-index: 2;
+}
+
+.vision-section .vision-content .img-wrap {
+  margin-top: 100px;
+}
+
+@media screen and (min-width: 1025px) {
+  .vision-section {
+    min-height: 100vh;
+    padding-top: 25vh;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .vision-section {
+    min-height: 50vh;
+  }
+  .vision-section .bg5 {
+    background-position-y: 106%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .vision-section {
+    min-height: 100vh;
+  }
+  .vision-section .bubble-section {
+    width: 39%;
+    right: -7%;
+    top: 109%;
+    z-index: 2;
+  }
+  .vision-section .bg5 {
+    background-size: 47%;
+    background-repeat: no-repeat;
+    background-position-x: -18%;
+    background-position-y: 90%;
+  }
+  .vision-section .vision-content .content p {
+    width: 90%;
+    mix-blend-mode: difference !important;
+  }
+}
+
+@media screen and (max-height: 420px) {
+  .zeit-bg {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .vision-section {
+    min-height: auto;
+    padding-bottom: 20vh;
+  }
+  .vision-section .zeit-bg {
+    display: none;
+  }
+  .vision-section .vision-content .content p {
+    mix-blend-mode: difference !important;
+    width: 100%;
+    z-index: 10;
+    position: relative;
+  }
+  .vision-section .bg5 {
+    background-size: 60%;
+    background-position-x: 116%;
+    background-position-y: 111%;
+    opacity: 0.5;
+  }
+  .vision-section .bubble-section {
+    width: 38%;
+    top: 0%;
+  }
+}
+/*# sourceMappingURL=vision.css.map */

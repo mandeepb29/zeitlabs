@@ -1,0 +1,188 @@
+.service-section {
+  position: relative;
+  overflow-y: visible;
+}
+
+.service-section .services {
+  width: 70%;
+  margin: auto;
+}
+
+.service-section .services .bg {
+  position: absolute;
+  height: 200%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+}
+
+.service-section .services .bg1 {
+  background: url("../assets/img/bg1.png");
+  background-size: 30%;
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  background-position-y: 5%;
+}
+
+.service-section .services .bg2 {
+  background: url("../assets/img/bg2.png");
+  background-size: 30%;
+  background-repeat: no-repeat;
+  background-position-x: -20%;
+  background-position-y: 52%;
+  z-index: 1;
+}
+
+.service-section .services .card {
+  width: 95%;
+  height: auto;
+  border-radius: 15px;
+  background: #222;
+  margin: 3rem auto;
+  text-align: center;
+  padding: 1rem;
+  overflow: hidden;
+  position: relative;
+  border: none;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.service-section .services .card .icon {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #eeb90a;
+  margin: 1rem auto;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  z-index: 2;
+}
+
+.service-section .services .card .icon i {
+  font-size: 3.5rem;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.service-section .services .card .head {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #777;
+  z-index: 2;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.service-section .services .card p {
+  color: white;
+  font-size: 0.85rem;
+  margin: 1.5rem 1.5rem;
+  text-align: justify;
+  font-weight: 600;
+  z-index: 3;
+}
+
+.service-section .services .card .expand-bottom {
+  width: 200px;
+  height: 200px;
+  background: #eeb90a;
+  position: absolute;
+  bottom: -38%;
+  left: -45%;
+  border-radius: 50%;
+  z-index: 0;
+  -webkit-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
+}
+
+.service-section .services .card .expand-top {
+  width: 400px;
+  height: 400px;
+  background: #635f53;
+  position: absolute;
+  top: -55%;
+  right: -80%;
+  border-radius: 50%;
+  z-index: 1;
+  -webkit-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.service-section .card:hover .expand-bottom {
+  -webkit-transform: scale(10);
+          transform: scale(10);
+}
+
+.service-section .card:hover .icon {
+  background: #252422;
+}
+
+.service-section .card:hover .icon i {
+  color: #eeb90a;
+}
+
+.service-section .card:hover p, .service-section .card:hover .head {
+  color: #222;
+}
+
+@media screen and (max-width: 1024px) {
+  .service-section .services .card {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .service-section .services .bg2 {
+    background-size: 40%;
+  }
+  .service-section .services .card {
+    margin: 1rem auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .service-section .services .card {
+    margin: 1.5rem auto;
+  }
+  .service-section .services .bg1 {
+    background-size: 50%;
+    background-position-x: 100%;
+    background-position-y: 1%;
+  }
+  .service-section .services .bg2 {
+    background-size: 60%;
+    background-position-x: -51%;
+    background-position-y: 52%;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .service-section .services .bg1 {
+    background-size: 92%;
+    background-position-x: 263%;
+    background-position-y: 0%;
+  }
+  .service-section .services .bg2 {
+    background-size: 78%;
+    background-position-x: -65%;
+    background-position-y: 48%;
+  }
+  .service-section .services .card {
+    width: 95%;
+  }
+}
+/*# sourceMappingURL=services.css.map */

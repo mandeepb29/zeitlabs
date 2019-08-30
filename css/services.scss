@@ -1,0 +1,178 @@
+.service-section{
+    position: relative;
+    overflow-y: visible;
+    .services{
+        width: 70%;
+        margin: auto;
+.bg{
+    position: absolute;
+    height: 200%;
+    width: 100%;
+    left:0;
+    top: 0;
+    pointer-events: none;
+}
+.bg1{
+    background: url('../assets/img/bg1.png');
+    background-size: 30%;
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-position-y: 5%;
+}
+.bg2{
+    background: url('../assets/img/bg2.png');
+    background-size: 30%;
+    background-repeat: no-repeat;
+    background-position-x: -20%;
+    background-position-y: 52%;
+   z-index: 1;
+}
+        .card{
+            width: 95%;
+            height: auto;
+            border-radius: 15px;
+            background: #222;
+            margin: 3rem auto;
+            text-align: center;
+            padding: 1rem;
+            overflow: hidden;
+            position: relative;
+            border: none; 
+            cursor: pointer;
+            z-index: 3;
+           .icon{
+               width: 120px;
+               height: 120px;
+               border-radius: 50%;
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               background: #eeb90a;
+               margin:1rem auto;
+               transition: all 0.5s ease-in-out;
+               z-index: 2;
+
+               i{
+                   font-size: 3.5rem;
+                   transition: all 0.4s ease-in-out;
+                   
+               }
+           }
+          
+           .head{
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            font-size: 1.5rem;
+            color: #777;
+            z-index: 2;
+            transition: all 0.4s ease-in-out;
+           }
+           p{
+               color:white;
+               font-size: 0.85rem;
+               margin: 1.5rem 1.5rem;
+               text-align: justify;
+               font-weight: 600;
+               z-index: 3;
+           }
+           .expand-bottom{
+            width: 200px;
+            height: 200px;
+            background: #eeb90a;
+            position: absolute;
+            bottom: -38%;
+            left: -45%;
+            border-radius: 50%;
+            z-index: 0;
+            transition: all 0.6s ease-in-out;
+        }
+        .expand-top{
+            width: 400px;
+            height: 400px;
+            background: #635f53;
+            position: absolute;
+            top: -55%;
+            right: -80%;
+            border-radius: 50%;
+            z-index: 1;
+            transition: all 0.6s ease-in-out;
+            transform: scale(1);
+        }
+           
+        }
+    }
+    .card:hover .expand-bottom{
+        transform: scale(10);
+    }
+    .card:hover .icon{
+      background: #252422;
+      i{
+          color: #eeb90a;
+      }
+    }
+    .card:hover p, .card:hover .head{
+        color: #222;
+        
+    }
+
+}
+@media screen and (max-width:1024px){
+    .service-section{
+        .services{
+            .card{
+                width: 100%;
+            }
+        }
+        
+    }
+}
+@media screen and (max-width:991px){
+    .service-section{
+        .services {
+            .bg2{
+                background-size: 40%;
+            }
+            .card{
+                margin: 1rem auto;
+            }
+        }
+}
+}
+@media screen and (max-width:768px){
+    .service-section{
+        .services {
+            .card{
+                margin: 1.5rem auto;
+            }
+             .bg1 {
+                background-size: 50%;
+                background-position-x: 100%;
+                background-position-y: 1%;
+            }
+             .bg2 {
+                background-size: 60%;
+                background-position-x: -51%;
+                background-position-y: 52%;
+            }
+        }
+    }
+}
+@media screen and (max-width:420px){
+    .service-section{
+        .services {
+             .bg1 {
+                background-size: 92%;
+                background-position-x: 263%;
+                background-position-y: 0%;
+            }
+             .bg2 {
+                background-size: 78%;
+                background-position-x: -65%;
+                background-position-y: 48%;
+            }
+            .card{
+                width: 95%;
+            }
+        }
+    }
+}
