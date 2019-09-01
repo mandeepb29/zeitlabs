@@ -464,7 +464,7 @@
                         <img src="assets/img/contact-img.svg" alt="contact-img">
                     </div>
                 </div>
-                <div class="col-lg-7" data-aos="fade-up">
+                <div class="col-lg-7" data-aos="fade-up" data-aos-once="true">
                     <form>
                         <div class='field'>
                             <input placeholder='Name'>
@@ -581,7 +581,9 @@
 
     <script>
         //aos initialization
+        
         if(screen.height<=520 ){
+          
             AOS.init({
                 // Global settings:
                 disable: 'mobile', // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
@@ -596,7 +598,8 @@
                 anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
             });
         }
-            else if(screen.width<=520 && screen.height>=520){
+            if(screen.width<=520 && screen.height>=520){
+               
                 AOS.init({
                 // Global settings:
                 disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
@@ -610,6 +613,7 @@
                 mirror: false, // whether elements should animate out while scrolling past them
                 anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
             });
+     
             }
             else{
                 AOS.init({
@@ -628,6 +632,7 @@
             }
           
         AOS.refresh();
+        
     </script>
       <!-- JS files-->
       <script src="/js/main.js"></script>
