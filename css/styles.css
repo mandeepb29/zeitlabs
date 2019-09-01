@@ -1,18 +1,24 @@
 /*-------------------------------------------
-----------------------GLOBAL STYLES-----------
+--------------     GLOBAL STYLES-------------
 ---------------------------------------------*/
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: 0;
           box-sizing: 0;
   overflow-x: hidden;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   overflow-x: hidden;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Merriweather', serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Merriweather", serif;
   font-weight: bold;
   -webkit-transition: all ease-in-out 0.65s;
   transition: all ease-in-out 0.65s;
@@ -32,12 +38,13 @@ ul {
   padding: 0;
 }
 
-a:visited, a:focus {
+a:visited,
+a:focus {
   outline: none;
 }
 
 p {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 500;
   -webkit-transition: all ease-in-out 0.65s;
   transition: all ease-in-out 0.65s;
@@ -69,7 +76,7 @@ button {
   font-weight: bold;
   position: relative;
   cursor: pointer;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 600;
   color: white;
   border-radius: 35px !important;
@@ -102,7 +109,7 @@ button:hover {
 
 .section-head h1 {
   font-size: 3.5rem;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 800;
   letter-spacing: -2px;
 }
@@ -454,7 +461,8 @@ header .navbar .logo2 {
   opacity: 0;
 }
 
-header .logo, header .logo2 {
+header .logo,
+header .logo2 {
   width: 100%;
   position: absolute;
   -webkit-transition: all 0.3s ease-out !important;
@@ -496,7 +504,7 @@ header .menu ul li a {
   font-weight: 600;
   padding: 12px;
   text-transform: uppercase;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   letter-spacing: -0.5px;
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
@@ -504,7 +512,7 @@ header .menu ul li a {
 }
 
 header .menu ul li a::before {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0%;
   left: 0px;
@@ -557,7 +565,8 @@ header .navbar-on-scroll .logo2 {
   opacity: 1;
 }
 
-header .navbar-on-scroll .logo-wrap, header .navbar-on-scroll .menu {
+header .navbar-on-scroll .logo-wrap,
+header .navbar-on-scroll .menu {
   height: 70px;
 }
 
@@ -640,13 +649,13 @@ header .menu .copyright {
   }
   header .menu-contact h5 {
     color: white;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: 600;
     font-size: 14px;
   }
   header .menu-contact p {
     color: #eeb90a;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
   }
   header .hamburger {
     display: block;
@@ -724,7 +733,7 @@ header .menu .copyright {
 }
 
 /*---responsive styling for lansdcape mode---*/
-@media screen and (max-height: 420px) {
+@media screen and (max-height: 420px) and (min-width: 567px) {
   .navbar .logo-wrap {
     width: 75px !important;
   }
@@ -758,23 +767,22 @@ header .menu .copyright {
 -------------------FOOTER-----------------------
 ------------------------------------------------*/
 .footer-bg {
-  height: 250px;
+  height: 350px;
   width: 100%;
-  background: url("../assets/img/footer-bg.png");
-  background-size: cover 100%;
+  background: url("../assets/img/footer-bg.svg");
+  background-size: 150%;
   background-position: top;
   background-repeat: no-repeat;
 }
 
-@media screen and (min-width: 1556px) {
+@media screen and (max-width: 1024px) {
   .footer-bg {
     height: 300px;
-    background-size: cover;
   }
 }
 
 .footer-section {
-  background: #111;
+  background: #000;
   padding: 3rem 0;
   padding-bottom: 0rem;
   min-height: auto;
@@ -796,13 +804,13 @@ header .menu .copyright {
 .footer-section p {
   color: white;
   font-size: 0.8rem;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   width: 80%;
   margin: 25px 8px;
 }
 
 .footer-section h2 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 600;
   letter-spacing: -1px;
   font-size: 1.5rem;
@@ -816,7 +824,7 @@ header .menu .copyright {
 
 .footer-section ul li {
   list-style: none;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: white;
   font-weight: 500;
   letter-spacing: -0.4px;
@@ -824,7 +832,9 @@ header .menu .copyright {
   cursor: pointer;
 }
 
-.footer-section li:hover i, .footer-section li:hover span, .footer-section a:hover li {
+.footer-section li:hover i,
+.footer-section li:hover span,
+.footer-section a:hover li {
   color: #eeb90a;
 }
 
@@ -835,13 +845,14 @@ header .menu .copyright {
   transition: color ease-in 0.2s;
 }
 
-.footer-section span, .footer-section a li {
+.footer-section span,
+.footer-section a li {
   -webkit-transition: color ease-in 0.2s;
   transition: color ease-in 0.2s;
 }
 
 .copyright h6 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 0.8rem;
   color: #eeb90a;
   font-weight: 600;
@@ -861,6 +872,9 @@ header .menu .copyright {
 }
 
 @media screen and (max-width: 768px) {
+  .footer-bg {
+    height: 200px !important;
+  }
   .footer-section .footer-logo {
     text-align: center;
   }
@@ -873,7 +887,8 @@ header .menu .copyright {
     text-align: center;
     font-size: 0.95rem;
   }
-  .footer-section .site-links, .footer-section .contact-links {
+  .footer-section .site-links,
+  .footer-section .contact-links {
     text-align: center;
   }
   .footer-section .copyright {
@@ -893,6 +908,7 @@ header .menu .copyright {
 @media screen and (max-width: 420px) {
   .footer-bg {
     background-position: top;
+    height: 100px !important;
   }
   .footer-section .footer-logo img {
     width: 35%;

@@ -18,7 +18,7 @@
 }
 
 .service-section .services .bg1 {
-  background: url("../assets/img/bg1.png");
+  background: url("../assets/img/bg3.webp");
   background-size: 30%;
   background-repeat: no-repeat;
   background-position-x: 100%;
@@ -26,7 +26,7 @@
 }
 
 .service-section .services .bg2 {
-  background: url("../assets/img/bg2.png");
+  background: url("../assets/img/bg2.webp");
   background-size: 30%;
   background-repeat: no-repeat;
   background-position-x: -20%;
@@ -76,7 +76,7 @@
 }
 
 .service-section .services .card .head {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 1.5rem;
   color: #777;
@@ -135,7 +135,8 @@
   color: #eeb90a;
 }
 
-.service-section .card:hover p, .service-section .card:hover .head {
+.service-section .card:hover p,
+.service-section .card:hover .head {
   color: #222;
 }
 

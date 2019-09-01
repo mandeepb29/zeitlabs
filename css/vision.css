@@ -9,7 +9,7 @@
   width: 100%;
   top: 0;
   left: 0;
-  background: url("../assets/img/vision-bg.png");
+  background: url("../assets/img/vision-bg.svg");
   background-size: 28%;
   background-repeat: no-repeat;
   background-position-x: -8%;
@@ -36,8 +36,8 @@
 
 .vision-section .bubble-section {
   position: absolute;
-  height: 100%;
-  width: 30%;
+  height: 120%;
+  width: 35%;
   right: 0;
   top: 0;
   z-index: 2;
@@ -50,7 +50,7 @@
 @media screen and (min-width: 1025px) {
   .vision-section {
     min-height: 100vh;
-    padding-top: 25vh;
+    padding-top: 20vh;
   }
 }
 
@@ -109,10 +109,9 @@
     background-size: 60%;
     background-position-x: 116%;
     background-position-y: 111%;
-    opacity: 0.5;
   }
   .vision-section .bubble-section {
-    width: 38%;
+    width: 42%;
     top: 0%;
   }
 }

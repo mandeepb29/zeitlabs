@@ -30,7 +30,7 @@
 
 .landing-section .landing-text h2 {
   font-size: 3rem;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 800;
   margin: 1rem;
   letter-spacing: -2px;
@@ -45,7 +45,7 @@
   width: 90%;
   color: #101010;
   margin: auto;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 600;
   padding: 0.5rem 2rem;
 }
@@ -61,7 +61,7 @@
   color: #275c84;
   font-size: 1.5rem;
   letter-spacing: -1px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 600;
 }
 
@@ -71,9 +71,10 @@
   color: #101010;
 }
 
-.landing-section .contact span, .landing-section .contact a span {
+.landing-section .contact span,
+.landing-section .contact a span {
   margin-right: 1rem;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 600;
   cursor: pointer;
   -webkit-transition: all 0.3s ease-in-out;
@@ -93,6 +94,12 @@
   }
   .landing-section .zeit-banner {
     margin-top: 10vh;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-height: 768px) {
+  .landing-section {
+    min-height: 100vh;
   }
 }
 
@@ -147,7 +154,7 @@
     width: 100%;
     color: #101010;
     margin: 10px auto;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: 600;
     padding: 0;
   }
