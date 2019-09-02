@@ -1,6 +1,5 @@
 $(function($) {
   "use strict";
-
   // Preloader
   $(window).on("load", function() {
     if ($("#preloader").length) {
@@ -80,7 +79,6 @@ $(function($) {
     $(links).on("click", function() {
       $(menu).toggleClass("menu-opened");
       $(hamburger).toggleClass("open");
-      $(navLinks).toggleClass("fade");
     });
   }
 
