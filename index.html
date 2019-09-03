@@ -3,6 +3,16 @@
 
 <head>
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-146946048-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-146946048-1');
+    </script>
+
     <meta charset="utf-8">
     <title>Zeit</title>
     <base href="/">
@@ -11,13 +21,10 @@
 
     <!--------CSS------->
     <link rel="stylesheet" href="./css/styles.min.css">
-
     <!--bootstrap-->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="libs/bootstrap.min.css">
     <!--google fonts-->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,800,900&display=swap" rel="stylesheet">
-    <!--font awesome-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--aos-->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
@@ -31,7 +38,7 @@
     <header>
         <div class="navbar">
             <div class="logo-wrap">
-                <a href="home" class="logo scrollto"><img src="assets/img/zeit1.png" alt="logo-1"></a>
+                <a href="#home" class="logo scrollto"><img src="assets/img/zeit1.png" alt="logo-1"></a>
                 <a href="#home" class="logo2 scrollto"><img src="assets/img/zeit2.png" alt="logo-2"></a>
             </div>
             <div class="menu">
@@ -87,10 +94,10 @@
                         <h4>
                             Contact Us
                         </h4>
-                        <i class="fa fa-envelope"></i><span>zeit@co.in</span>
-                        <i class="fa fa-phone"></i><span>+91-7389798831</span>
-                        <a href="https://in.linkedin.com/in/atharvamungee10" target="_blank" style="color: #101010;"><i
-                                class="fa fa-linkedin"></i><span>Linkedin</span></a>
+                        <div class="inline"> <img src="assets/img/email.svg" alt="email" class="icon"><span>zeit@co.in</span></div>
+                       <div class="inline"> <img src="assets/img/phone.svg" alt="email" class="icon"><span>+91-7389798831</span></div>
+                       <div class="inline"><a href="https://in.linkedin.com/in/atharvamungee10" target="_blank" style="color: #101010;"><img src="assets/img/linkedin.svg" alt="email" class="icon"><span>Linkedin</span></a></div>
+                        
                     </div>
                 </div>
 
@@ -508,17 +515,17 @@
                         <h2>Contact</h2>
                         <ul>
                             <li>
-                                <i class="fa fa-envelope"></i>
+                                    <img src="assets/img/email.svg" alt="email" class="icon">
                                 <span>zeit@co.in</span>
                             </li>
                             <li>
-                                <i class="fa fa-phone"></i>
+                                    <img src="assets/img/phone.svg" alt="email" class="icon">
                                 <span>4645886</span>
                             </li>
                             <li>
                                 <a href="https://in.linkedin.com/in/atharvamungee10" target="_blank"
                                     style="color: white">
-                                    <i class="fa fa-linkedin"></i>
+                                    <img src="assets/img/linkedin.svg" alt="email" class="icon">
                                     <span>Linkedin</span>
                                 </a>
                             </li>
@@ -546,16 +553,14 @@
         </svg>
     </div>
 
-    <!--bootstrap scripts-->
+    <!-- JS files-->
     <script src="/libs/jquery/jquery.min.js"></script>
-    <script src="/libs/jquery/jquery-migrate.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="/libs/easing/easing.min.js"></script>
     <script src="/libs/wow/wow.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-      <!-- JS files-->
-      <script src="/js/main.min.js"></script>
 
+    <script src="/js/main.min.js"></script>
+      
 </body>
 
 </html>

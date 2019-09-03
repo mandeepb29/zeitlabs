@@ -126,6 +126,16 @@ button:hover {
   z-index: 2;
 }
 
+.inline {
+  display: inline-block;
+}
+
+.icon {
+  width: 20px;
+  margin-right: 10px;
+  margin-top: -6px;
+}
+
 #sd-container {
   position: absolute;
   top: 87vh;
@@ -832,12 +842,6 @@ header .menu .copyright {
   font-weight: 600;
 }
 
-.landing-section .contact i {
-  font-size: 1.5rem;
-  margin-right: 5px;
-  color: #101010;
-}
-
 .landing-section .contact span,
 .landing-section .contact a span {
   margin-right: 1rem;
@@ -1027,7 +1031,7 @@ header .menu .copyright {
 }
 
 .service-section .services .bg1 {
-  background: url("../assets/img/bg3.webp");
+  background: url("../assets/img/bg1.webp");
   background-size: 30%;
   background-repeat: no-repeat;
   background-position-x: 100%;
@@ -1603,7 +1607,8 @@ header .menu .copyright {
   margin: auto;
 }
 
-.contact-section input ~ label, .contact-section textarea ~ label {
+.contact-section input ~ label,
+.contact-section textarea ~ label {
   position: absolute;
   top: -3em;
   display: block;
@@ -1620,7 +1625,8 @@ header .menu .copyright {
   transition: opacity 0.25s ease 0;
 }
 
-.contact-section input, .contact-section textarea {
+.contact-section input,
+.contact-section textarea {
   -webkit-transition: all 0.7s ease;
   transition: all 0.7s ease;
   padding: 12px 16px;
@@ -1636,7 +1642,8 @@ header .menu .copyright {
   margin-bottom: 10px;
 }
 
-.contact-section input:focus, .contact-section textarea:focus {
+.contact-section input:focus,
+.contact-section textarea:focus {
   border-color: #101010;
   background-color: #252525;
 }
@@ -1645,7 +1652,8 @@ header .menu .copyright {
   height: 150px;
 }
 
-.contact-section input ~ label::before, .contact-section textarea ~ label::before {
+.contact-section input ~ label::before,
+.contact-section textarea ~ label::before {
   position: absolute;
   display: inline-block;
   content: "";
@@ -1659,18 +1667,21 @@ header .menu .copyright {
   left: 10px;
 }
 
-.contact-section input:focus ~ label, .contact-section textarea:focus ~ label {
+.contact-section input:focus ~ label,
+.contact-section textarea:focus ~ label {
   opacity: 0.8;
   -webkit-transition: opacity 0.7s ease 1s;
   transition: opacity 0.7s ease 1s;
 }
 
-.contact-section ::-webkit-input-placeholder, .contact-section :-webkit-textarea-placeholder {
+.contact-section ::-webkit-input-placeholder,
+.contact-section :-webkit-textarea-placeholder {
   font-size: 0.75em;
-  color: #919FAF;
+  color: #919faf;
 }
 
-.contact-section input:focus, .contact-section textarea:focus {
+.contact-section input:focus,
+.contact-section textarea:focus {
   position: relative;
   outline: none;
   color: white;
@@ -1744,6 +1755,11 @@ header .menu .copyright {
 
 .footer-section .contact-links ul li {
   margin-bottom: 16px;
+}
+
+.footer-section .contact-links .icon {
+  -webkit-filter: invert(1);
+          filter: invert(1);
 }
 
 .footer-section p {
