@@ -1,13 +1,5 @@
 $(function($) {
   "use strict";
-  // Preloader
-  $(function(){ // this replaces document.ready
-    $(window).on("load", function(){
-      $('#preloader').fadeOut('slow', function() {
-        $(this).remove();
-      });
-    });
-  });
 
   //aos initialization
   if (screen.height <= 520) {

@@ -3,16 +3,6 @@
 
 <head>
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-146946048-1"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-146946048-1');
-    </script>
-
     <meta charset="utf-8">
     <title>Zeit</title>
     <base href="/">
@@ -31,6 +21,16 @@
 </head>
 
 <body>
+
+    <!--------preloader-------->
+    <div id="preloader">
+            <svg viewBox="0 0 120 120" width="120px" height="120px">
+                <circle class="inner" cx="60" cy="60" r="32" />
+                <circle class="middle" cx="60" cy="60" r="38" />
+                <circle class="outer" cx="60" cy="60" r="44" />
+            </svg>
+        </div>
+    
 
     <!----------------------------------
                   NAVBAR
@@ -72,6 +72,7 @@
 
     </header>
     <!--NAVBAR ENDS-->
+
 
     <!----------------------------------
           LANDING SECTION
@@ -117,7 +118,6 @@
     <!--LANDING SECTION ENDS-->
 
 
-
     <!----------------------------------
             ABOUT SECTION
     ------------------------------------>
@@ -148,8 +148,6 @@
 
     </section>
     <!--ABOUT SECTION ENDS-->
-
-
 
 
     <!----------------------------------
@@ -344,7 +342,9 @@
     </section>
     <!--TECHNOLOGY SECTION ENDS-->
 
-
+    <!----------------------------------
+             VISION SECTION
+    ------------------------------------>
     <section class="vision-section dark" id="vision">
         <div class="bg5"></div>
         <div class="container">
@@ -375,7 +375,12 @@
         </div>
 
     </section>
+    <!--VISION SECTION ENDS-->
 
+
+     <!----------------------------------
+             CLIENTS SECTION
+    ------------------------------------>
     <section class="client-section" id="client">
         <canvas id="bubbles"></canvas>
         <div class="section-head text-center" data-aos="fade-up" data-aos-easing="ease-in-out-back">
@@ -435,8 +440,12 @@
         </div>
 
     </section>
+    <!--CLIENTS SECTION ENDS-->
 
 
+     <!----------------------------------
+             CONTACT SECTION
+    ------------------------------------>
     <section class="contact-section" id="contact">
         <div class="container">
             <div class="section-head m-b-100 text-center" data-aos="fade-up" data-aos-easing="ease-in-out-back">
@@ -474,8 +483,11 @@
         
         <div class="footer-bg"> </div>
     </section>
+    <!--CONATACT SECTION ENDS-->
 
-
+    <!----------------------------------
+                 FOOTER
+    ------------------------------------>
     <section class="footer-section">
         <footer>
             <div class="container">
@@ -544,22 +556,36 @@
         </footer>
 
     </section>
-    <!--------preloader-------->
-    <div id="preloader">
-        <svg viewBox="0 0 120 120" width="120px" height="120px">
-            <circle class="inner" cx="60" cy="60" r="32" />
-            <circle class="middle" cx="60" cy="60" r="38" />
-            <circle class="outer" cx="60" cy="60" r="44" />
-        </svg>
-    </div>
-
+    
     <!-- JS files-->
     <script src="/libs/jquery/jquery.min.js"></script>
     <script src="/libs/easing/easing.min.js"></script>
     <script src="/libs/wow/wow.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
-    <script src="/js/main.min.js"></script>
+    <script src="/js/main.min.js" async></script>
+
+    <script>
+    // Preloader
+     $(function() {
+       // this replaces document.ready
+       $(window).on("load", function() {
+         $("#preloader").fadeOut("slow", function() {
+           $(this).remove();
+         });
+       });
+     });
+   
+    </script>
+     <!-- Global site tag (gtag.js) - Google Analytics -->
+     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-146946048-1"></script>
+     <script>
+     window.dataLayer = window.dataLayer || [];
+     function gtag(){dataLayer.push(arguments);}
+     gtag('js', new Date());
+ 
+     gtag('config', 'UA-146946048-1');
+     </script>
       
 </body>
 
